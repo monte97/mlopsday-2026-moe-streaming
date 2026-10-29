@@ -7,6 +7,14 @@ Ogni numero del talk, con la fonte da cui viene. Verificate il 29 ottobre 2026.
 - [Flash-MoE](https://github.com/danveloper/flash-moe): Qwen3.5-397B-A17B su MacBook Pro M3 Max da 48 GB a 4,4 token/s; 512 esperti per layer, 4 attivi più uno condiviso; 60 layer; 209 GB a 4 bit e 120 GB a 2 bit; parte fissa di circa 5,5 GB; ~71% di hit della page cache; `mmap` 5 volte più lento di `pread`; prefetch con −73% sulla GPU per la contesa della memoria unificata; routing speculativo −38%; a 2 bit si rompono JSON e tool calling.
 - [Flash-MoE, articolo tecnico](https://lilting.ch/en/articles/flash-moe-qwen35-397b-metal-inference): circa 6,75 MB per esperto a 4 bit, lettura dei 4 esperti per layer.
 
+## Altri motori recenti
+
+- [Colibrì (fork di JustVugg/colibri)](https://github.com/alexandreofbh/colibri_GLM-5.2): GLM-5.2, 744B totali e circa 40B attivi, 256 esperti per layer di cui 8 attivi, 75 layer MoE, circa 370 GB a int4, esperti da circa 19 MB; da 0,05 a 1,06 token/s secondo i benchmark della community.
+- [ModelFit, "Run a 744B Model on 25GB RAM? The Honest Math"](https://modelfit.io/blog/run-744b-model-25gb-ram-honest-math/): circa 11 GB letti per token per GLM-5.2, hit rate della cache e limiti di Colibrì.
+- [llama.cpp, PR #25294](https://github.com/ggml-org/llama.cpp/pull/25294): streaming degli esperti da disco proposto in llama.cpp, ancora aperta; GLM-5.2 su GB10 a circa 2 token/s in decode.
+- [streamoe](https://github.com/transybao1393/streamoe): Qwen3.6-35B-A3B su M3 Pro con tetto di memoria da 3–6 GB, 8–14 token/s.
+- [Topic GitHub ssd-streaming](https://github.com/topics/ssd-streaming): l'elenco dei progetti in crescita.
+
 ## Streaming degli esperti e prerouting
 
 - [Edge0](https://www.alphaxiv.org/abs/2609.18063): prerouter per layer usato come routing, recupero della qualità con una LoRA; su un MoE da 35B da 3,9 a 20,4 token/s rispetto allo streaming on-demand.
