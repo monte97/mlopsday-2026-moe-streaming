@@ -1,6 +1,6 @@
-# 397B parametri su 48GB di RAM
+# Streaming degli esperti: modelli MoE oltre la RAM
 
-Slide e fonti del community talk **"397B parametri su 48GB di RAM: streaming degli esperti MoE da SSD"**, [mlopsday](https://www.mlopsday.it), Bologna, 29 ottobre 2026.
+Slide e fonti del community talk **"Streaming degli esperti: modelli MoE oltre la RAM"**, [mlopsday](https://www.mlopsday.it), Bologna, 29 ottobre 2026.
 
 - **Slide:** [`slides/moe-streaming-mlopsday-2026.pdf`](slides/moe-streaming-mlopsday-2026.pdf)
 - **Fonti di ogni numero:** [`FONTI.md`](FONTI.md)
