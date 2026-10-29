@@ -1,6 +1,6 @@
-# Streaming degli esperti: modelli MoE oltre la RAM
+# Il modello non ci sta: le leve per usarlo lo stesso
 
-Slide e fonti del community talk **"Streaming degli esperti: modelli MoE oltre la RAM"**, [mlopsday](https://www.mlopsday.it), Bologna, 29 ottobre 2026.
+Slide e fonti del community talk **"Il modello non ci sta: le leve per usarlo lo stesso"**, [mlopsday](https://www.mlopsday.it), Bologna, 29 ottobre 2026.
 
 - **Slide:** [`slides/moe-streaming-mlopsday-2026.pdf`](slides/moe-streaming-mlopsday-2026.pdf)
 - **Fonti di ogni numero:** [`FONTI.md`](FONTI.md)
